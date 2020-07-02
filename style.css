@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-/* section 1 */
+/* Section 1 */
 
 #section-1 {
     background-color: #87509c;
@@ -55,4 +55,15 @@ nav ul li a {
     text-transform: uppercase;
     font-size: 18px;
     border-radius: 5px;
+}
+
+/* Section 2 */
+
+#section-2 {
+    background-color: #17c2a4;
+    min-height: 745px;
+    color: white;
+}
+.title-box h2 {
+    margin-top: 0;
 }
