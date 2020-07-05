@@ -25,6 +25,25 @@
     .blurb h3 {
         font-size: 22px !important;
     }
+    #menu-icon {
+        display: inline-block !important;
+        color: white;
+        font-size: 25px;
+        margin-right: 15px;
+        position: absolute; /* float: right; instead of using this */
+        top: 55px;
+        right: 15px;
+    }
+    nav {
+        display: none;
+    }
+    #main-menu {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    #main-menu ul li {
+        display: block;
+    }
 }
 @media screen and (max-width: 732px) {
     .blurb {

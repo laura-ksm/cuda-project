@@ -2,19 +2,21 @@
 <html>
 
 <head>
+
     <title>Cuda</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
+</head>
 <body>
     
     <section id="section-1">
         <div class="container">
             <header>
                 <img src="assets/logo.png">
-                <nav>
+                <nav id="main-menu">
                     <ul>
                         <li class="active"><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -23,6 +25,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+
+                <a href="#" id="menu-icon" onclick="toggleMenu();" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </a>
+
             </header>
 
             <div id="main-heading-and-cta">
@@ -116,6 +123,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("main-menu");
+            if ( x.style.display === "block" ) {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
 </html>
